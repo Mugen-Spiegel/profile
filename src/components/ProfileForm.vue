@@ -128,12 +128,6 @@ import { mapMutations,mapGetters } from 'vuex'
     }),
 
     methods: {
-      // filterGroup (value, search) {
-      //   return value != null &&
-      //     search != null &&
-      //     typeof value === 'string' &&
-      //     value.toString().toLocaleUpperCase().indexOf(search) !== -1
-      // },
       submit () {
         if (!this.unique(`${this.form_data.first_name} ${this.form_data.last_name}`)) {
           this.addRows({
